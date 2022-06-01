@@ -10,11 +10,7 @@ export default function Pricing() {
 		<div className={styles.outerContainer}>
 			<div className={styles.innerContainer}>
 				<h1 className={styles.title}>PARKING</h1>
-				{/* <div className={`${styles.divider}`}></div> */}
-				{/* <div className={styles.subHeading}>
-					<span className={styles.brace}>[</span>MOBILITY CLASSES
-					<span className={styles.brace}>]</span>
-				</div> */}
+
 				<div className={styles.subHeadingLocation}>
 					<span className={styles.brace}>[</span>23 ONTARIO ST., ST CATHARINES
 					<span className={styles.brace}>]</span>

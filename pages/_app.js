@@ -8,13 +8,6 @@ import { useEffect } from "react";
 import "../styles/globals.css";
 import Layout from "../components/Layout";
 
-//x: 0 will put it center of screen
-const animations = {
-	initial: { opacity: 0, y: -100 },
-	animate: { opacity: 1, y: 0 },
-	exit: { opacity: 0, y: 100 },
-};
-
 function MyApp({ Component, pageProps, router }) {
 	useEffect(() => {
 		document.getElementById("__next").className = "nextBaseCustom";

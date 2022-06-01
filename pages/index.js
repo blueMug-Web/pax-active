@@ -1,19 +1,14 @@
-import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
-import Nav from "../components/Nav";
 
 //Cards
 import Card from "../components/Card";
-import CardDark from "../components/CardDark";
 
 //icons
 import {
 	Calendar2Date,
 	PersonCheckFill,
 	Stopwatch,
-	TrophyFill,
 	JournalCheck,
 	PeopleFill,
 	QuestionCircleFill,
@@ -30,9 +25,7 @@ import {
 export default function Home() {
 	return (
 		<>
-			{/* <div classNameName={styles.topLevel}> */}
 			<div className={`${styles.bodyStyle} text-center text-white`}>
-				{/* <Nav /> */}
 				{/* **** CAROUSEL **** */}
 				<div
 					id="homePageCarousel"
@@ -334,20 +327,7 @@ export default function Home() {
 				</div>
 
 				{/* **** CAROUSEL END **** */}
-
-				{/* <div
-					className={`${styles.consultBtnContainer} mt-auto position-relative bottom-0 start-50 translate-middle-x`}
-				>
-					<p className="lead py-3 pb-0">
-						<a href="#" className={`${styles.btnHomePage} btn btn-lg fw-bold`}>
-							BOOK A FREE CONSULTATION
-						</a>
-					</p>
-
-					<p className="lead">Consults are available in person and by phone</p>
-				</div> */}
 			</div>
-			{/* </div> */}
 		</>
 	);
 }
