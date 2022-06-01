@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { useEffect } from "react";
 import "../styles/globals.css";
 import Layout from "../components/Layout";
+import Nav from "../components/Nav";
 
 function MyApp({ Component, pageProps, router }) {
 	useEffect(() => {
@@ -18,7 +19,8 @@ function MyApp({ Component, pageProps, router }) {
 	}, []);
 
 	return (
-		<Layout>
+		<>
+			<Nav />
 			<AnimatePresence
 				exitBeforeEnter
 				initial={false}
@@ -44,10 +46,12 @@ function MyApp({ Component, pageProps, router }) {
 						},
 					}}
 				>
-					<Component {...pageProps} />
+					<Layout>
+						<Component {...pageProps} />
+					</Layout>
 				</motion.div>
 			</AnimatePresence>
-		</Layout>
+		</>
 	);
 }
 
