@@ -20,37 +20,36 @@ function MyApp({ Component, pageProps, router }) {
 
 	return (
 		<>
-			<Nav />
-			<AnimatePresence
-				exitBeforeEnter
-				initial={false}
-				onExitComplete={() => window.scrollTo(0, 0)}
-			>
-				<motion.div
-					key={router.route}
-					initial="pageInitial"
-					animate="pageAnimate"
-					exit="pageExit"
-					variants={{
-						pageInitial: {
-							opacity: 0,
-							transition: { duration: 0.7 },
-						},
-						pageAnimate: {
-							opacity: 1,
-							transition: { duration: 0.7 },
-						},
-						pageExit: {
-							opacity: 0,
-							transition: { duration: 0 },
-						},
-					}}
+			<Layout>
+				<AnimatePresence
+					exitBeforeEnter
+					initial={false}
+					onExitComplete={() => window.scrollTo(0, 0)}
 				>
-					<Layout>
+					<motion.div
+						key={router.route}
+						initial="pageInitial"
+						animate="pageAnimate"
+						exit="pageExit"
+						variants={{
+							pageInitial: {
+								opacity: 0,
+								transition: { duration: 0.7 },
+							},
+							pageAnimate: {
+								opacity: 1,
+								transition: { duration: 0.7 },
+							},
+							pageExit: {
+								opacity: 0,
+								transition: { duration: 0 },
+							},
+						}}
+					>
 						<Component {...pageProps} />
-					</Layout>
-				</motion.div>
-			</AnimatePresence>
+					</motion.div>
+				</AnimatePresence>
+			</Layout>
 		</>
 	);
 }

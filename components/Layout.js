@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
 	return (
 		<Fragment>
 			<Meta />
-			{/* <Nav /> */}
+			<Nav />
 
 			<main>{children}</main>
 			<ScrollButton />
