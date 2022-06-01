@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps, router }) {
 						},
 						pageExit: {
 							opacity: 0,
-							transition: { duration: 0.2 },
+							transition: { duration: 0 },
 						},
 					}}
 				>
