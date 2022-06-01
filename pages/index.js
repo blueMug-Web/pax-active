@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+import Footer from "../components/Footer";
 
 //Cards
 import Card from "../components/Card";
@@ -328,6 +329,7 @@ export default function Home() {
 
 				{/* **** CAROUSEL END **** */}
 			</div>
+			<Footer />
 		</>
 	);
 }

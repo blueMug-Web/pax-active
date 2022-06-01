@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
 
 			<main>{children}</main>
 			<ScrollButton />
-			<Footer />
+			{/* <Footer /> */}
 		</Fragment>
 	);
 };

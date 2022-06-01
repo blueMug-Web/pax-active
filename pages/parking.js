@@ -4,33 +4,35 @@ import Image from "next/image";
 
 //pictures
 import parkingmap from "../public/media/images/parkingmap.jpg";
+import Footer from "../components/Footer";
 
 export default function Pricing() {
 	return (
-		<div className={styles.outerContainer}>
-			<div className={styles.innerContainer}>
-				<h1 className={styles.title}>PARKING</h1>
+		<>
+			<div className={styles.outerContainer}>
+				<div className={styles.innerContainer}>
+					<h1 className={styles.title}>PARKING</h1>
 
-				<div className={styles.subHeadingLocation}>
-					<span className={styles.brace}>[</span>23 ONTARIO ST., ST CATHARINES
-					<span className={styles.brace}>]</span>
-				</div>
-				<div className={styles.textContainer}>
-					<p className={styles.text}>
-						THIRD STOREFRONT FROM CORNER OF ONTARIO ST AND ST.PAUL ST
-					</p>
-					<p className={styles.text}>FREE PARKING IS INDICATED IN GREEN</p>
-				</div>
-				<div className={styles.parkingImageContainer}>
-					<Image
-						src={parkingmap}
-						alt="parking map"
-						width={768}
-						height={744}
-						layout="responsive"
-					/>
-				</div>
-				{/* <div className={styles.subHeading}>
+					<div className={styles.subHeadingLocation}>
+						<span className={styles.brace}>[</span>23 ONTARIO ST., ST CATHARINES
+						<span className={styles.brace}>]</span>
+					</div>
+					<div className={styles.textContainer}>
+						<p className={styles.text}>
+							THIRD STOREFRONT FROM CORNER OF ONTARIO ST AND ST.PAUL ST
+						</p>
+						<p className={styles.text}>FREE PARKING IS INDICATED IN GREEN</p>
+					</div>
+					<div className={styles.parkingImageContainer}>
+						<Image
+							src={parkingmap}
+							alt="parking map"
+							width={768}
+							height={744}
+							layout="responsive"
+						/>
+					</div>
+					{/* <div className={styles.subHeading}>
 					<span className={styles.brace}>[</span>PERSONAL TRAINING
 					<span className={styles.brace}>]</span>
 				</div>
@@ -93,7 +95,9 @@ export default function Pricing() {
 						with more stamina for your day to day life.
 					</p>
 				</div> */}
+				</div>
 			</div>
-		</div>
+			<Footer />
+		</>
 	);
 }

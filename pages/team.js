@@ -16,6 +16,7 @@ import {
 	Instagram,
 	ArrowReturnRight,
 } from "react-bootstrap-icons";
+import Footer from "../components/Footer";
 
 export default function Team() {
 	return (
@@ -206,6 +207,7 @@ export default function Team() {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</>
 	);
 }
