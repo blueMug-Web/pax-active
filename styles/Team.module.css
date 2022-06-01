@@ -1,0 +1,175 @@
+.divider{
+    height: 25px;
+    width: 100%;
+}
+.outerContainer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    /* background-color: var(--darkBlue); */
+}
+.innerContainer {
+    display:flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-width: 1400px;
+    background-color: var(--yellow);
+    padding: 0;
+    margin: 0;
+}
+.titleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.titleCustom {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    color: white;
+    font-size: 3.6em;
+    text-shadow: 2px 2px #000000;
+    padding: 0% 2%;
+    margin: 0;
+}
+
+@media screen and (min-width: 1080px) {
+    .titleCustom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 3.6em;
+        text-shadow: 2px 2px #000000;
+        padding: 0% 2%;
+        margin: 0;
+    }
+}
+.cardContainer {
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.bioCardCustom {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+/* .cardImage {
+
+    height: 100%;
+    width: 100%;
+} */
+.cardTitleCustom{
+    font-size: 10vw;
+}
+.cardSubTitleCustom {
+    font-size: 4vw;
+    font-weight: 200;
+    margin-left: 20px;
+}
+
+
+.teamSocials{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.socialIcon {
+    font-size: 8.5vw;
+    color: var(--yellow);
+    /* margin: 0px 10px; */
+    transition: 0.3s;
+    padding: 0;
+    margin: 0 20px 0 0;
+}
+.socialIcon::before {
+    font-size: 7vw;
+  color: var(--yellow);
+  padding: 0;
+  margin: 0 20px 0 0;
+}
+.socialIcon:hover {
+    font-size: 7vw;
+  color:#d79429af;
+  padding: 0;
+  margin: 0 20px 0 0;
+}
+.socialLink{
+    height: 5rem;
+    width: 5rem;
+    padding: 0;
+    margin: 0;
+}
+
+
+.contactUsBtn{
+    background-color: var(--yellow);
+    color: #FFF;
+    font-size: 25px;
+    margin: 10px 5px;
+    border-radius: 12px;
+}
+
+.kevinDetailsTable {
+    width: 100%;
+    list-style:none;
+}
+.kevinDetailsTable li {
+    font-weight: 800;
+    line-height: 2.5rem;
+}
+
+@media screen and (min-width: 1080px) {
+    .cardTitleCustom{
+        font-size: 8rem;
+    }
+    .cardSubTitleCustom {
+        font-size: 4rem;
+        font-weight: 200;
+        margin-left: 20px;
+    }
+    .socialIcon {
+        font-size: 3rem;
+        color: var(--yellow);
+        /* margin: 0px 10px; */
+        transition: 0.2s;
+        padding: 0;
+        margin: 0 10px 0 10px;
+    }
+    .socialIcon::before {
+        font-size: 2.9rem;
+      color: var(--yellow);
+      margin: 0 10px 0 10px;
+    }
+    .socialIcon:hover {
+        font-size: 2.9rem;
+      color:#d79429af;
+      margin: 0 10px 0 10px;
+      cursor: pointer;
+    }
+    .contactUsBtn{
+        background-color: var(--yellow);
+        color: #FFF;
+        font-size: 2rem;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,33 @@
+/* .navbarCustom{
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+  } */
+  
+.togglerIcon {
+  color: var(--yellow);
+  font-size: 3rem;
+}
+.togglerIcon:active {
+  color: #FFF;
+  background-color: var(--yellow);
+  font-size: 3rem;
+  border: solid;
+  border-style: solid;
+  border-radius: 15px;
+}
+.togglerIcon:hover {
+  color: #FFF;
+  background-color: var(--yellow);
+  font-size: 3rem;
+  border: solid;
+  border-style: solid;
+  border-radius: 12px;
+}
+/* .textColor{
+  color: var(--yellow);
+} */
+
+/* @media screen and (min-width: 1080px) {
+
+ } */
