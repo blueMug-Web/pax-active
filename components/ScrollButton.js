@@ -5,15 +5,23 @@ import { ArrowUpSquareFill } from "react-bootstrap-icons";
 
 const ScrollButton = () => {
 	const [showTopBtn, setShowTopBtn] = useState(false);
+
 	useEffect(() => {
-		window.addEventListener("scroll", () => {
+		const handleScrollButton = (event) => {
 			if (window.scrollY > 400) {
 				setShowTopBtn(true);
 			} else {
 				setShowTopBtn(false);
 			}
-		});
+		};
+		// Should add a removeEventListener in the return to clean up memory leak when component unmounts
+		window.addEventListener("scroll", handleScrollButton);
+
+		return () => {
+			window.removeEventListener("scroll", handleScrollButton);
+		};
 	}, []);
+
 	const goToTop = () => {
 		window.scrollTo({
 			top: 0,
